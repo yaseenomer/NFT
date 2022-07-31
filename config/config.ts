@@ -10,7 +10,9 @@ export interface IPFSDetails {
     description: string
 }
 
-const client = ipfsHttpClient(`https://ipfs.infura.io:5001/api/v0`)
+const clientUrl: any = 'https://ipfs.infura.io:5001/api/v0'
+
+const client = ipfsHttpClient(clientUrl)
 
 export const lockAddress = '0xB9D6540ef2438677F853136a324527f28f06084F'
 

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/styles.module.css";
 import { Box, Image, Badge, useColorModeValue } from "@chakra-ui/react";
 
-export default function ItemCard({ item }) {
+export default function ItemCard({ item }: any) {
   const background = useColorModeValue("gray.100", "gray.700");
   return (
     <Box

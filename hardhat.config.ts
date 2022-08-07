@@ -1,7 +1,7 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 
-const PRIVATE_KEY = `d73cccb9c7227d1301640bf81d3dd750fcdf79e5e49d749b5e37485887183abb`;
+const PRIVATE_KEY = `fe0bf146bcf2864fd1dfb6a0489a9eee17fd483a4f10bd95e0dade39dbcf1230`;
 const INFURA_PROJECT_ID = `017c9e17b5ca4d8f817be5300d389438`;
 
 const config: HardhatUserConfig = {
@@ -12,6 +12,10 @@ const config: HardhatUserConfig = {
     },
     ropsten: {
       url: `https://ropsten.infura.io/v3/${INFURA_PROJECT_ID}`,
+      accounts: [`0x${PRIVATE_KEY}`]
+    },
+    rinkeby: {
+      url: `https://rinkeby.infura.io/v3/${INFURA_PROJECT_ID}`,
       accounts: [`0x${PRIVATE_KEY}`]
     }
   },
